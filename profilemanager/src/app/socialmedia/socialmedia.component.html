@@ -1,0 +1,81 @@
+<div class="social-media-holder">
+<h2>
+  Follow me On
+</h2>
+<div class="row">
+
+  <div *ngFor="let item of medias; let i=index" class="col-md-3 col-lg-3 social-media-icon-holder">
+    <div *ngIf="i<5" >
+      <a  class="btn btn-sm btn-facebook text" type="button" *ngIf="item.facebook" href="item.facebook">
+        <span>Facebook</span>
+      </a>
+      <button  class="btn btn-sm btn-twitter text" type="button" *ngIf="item.twitter">
+        <span>Twitter</span>
+      </button>
+      <button class="btn btn-sm btn-linkedin text" type="button" *ngIf="item.linkedin">
+        <span>LinkedIn</span>
+      </button>
+      <button  class="btn btn-sm btn-flickr text" type="button" *ngIf="item.flickr">
+        <span>Flickr</span>
+      </button>
+      <button  class="btn btn-sm btn-tumblr text" type="button" *ngIf="item.tumblr">
+        <span>Tumblr</span>
+      </button>
+      <button  class="btn btn-sm btn-xing text" type="button" *ngIf="item.xing">
+        <span>Xing</span>
+      </button>
+      <button  class="btn btn-sm btn-github text" type="button" *ngIf="item.github">
+        <span>Github</span>
+      </button>
+      <button  class="btn btn-sm btn-stack-overflow text" type="button" *ngIf="item.stack">
+        <span>StackOverflow</span>
+      </button>
+      <button  class="btn btn-sm btn-css3 text" type="button" *ngIf="item.css3">
+        <span>CSS3</span>
+      </button>
+      <button  class="btn btn-sm btn-youtube text" type="button" *ngIf="item.youtube">
+        <span>YouTube</span>
+      </button>
+      <button style="margin-bottom: 4px" class="btn btn-sm btn-dribbble text" type="button" *ngIf="item.dribbble">
+        <span>Dribbble</span>
+      </button>
+      <button style="margin-bottom: 4px" class="btn btn-sm btn-google-plus text" type="button" *ngIf="item.google">
+        <span>Google+</span>
+      </button>
+      <button style="margin-bottom: 4px" class="btn btn-sm btn-instagram text" type="button" *ngIf="item.instagram">
+        <span>Instagram</span>
+      </button>
+      <button style="margin-bottom: 4px" class="btn btn-sm btn-pinterest text" type="button" *ngIf="item.pintrest">
+        <span>Pinterest</span>
+      </button>
+      <button style="margin-bottom: 4px" class="btn btn-sm btn-vk text" type="button" *ngIf="item.vk">
+        <span>VK</span>
+      </button>
+      <button style="margin-bottom: 4px" class="btn btn-sm btn-yahoo text" type="button" *ngIf="item.yahoo">
+        <span>Yahoo</span>
+      </button>
+      <button style="margin-bottom: 4px" class="btn btn-sm btn-behance text" type="button" *ngIf="item.behance">
+        <span>Behance</span>
+      </button>
+      <button style="margin-bottom: 4px" class="btn btn-sm btn-dropbox text" type="button" *ngIf="item.dropbox">
+        <span>Dropbox</span>
+      </button>
+      <button style="margin-bottom: 4px" class="btn btn-sm btn-reddit text" type="button" *ngIf="item.redit">
+        <span>Reddit</span>
+      </button>
+      <button style="margin-bottom: 4px" class="btn btn-sm btn-spotify text" type="button" *ngIf="item.spotify">
+        <span>Spotify</span>
+      </button>
+      <button style="margin-bottom: 4px" class="btn btn-sm btn-vine text" type="button" *ngIf="item.vine">
+        <span>Vine</span>
+      </button>
+      <button style="margin-bottom: 4px" class="btn btn-sm btn-foursquare text" type="button" *ngIf="item.foursquare">
+        <span>Forsquare</span>
+      </button>
+      <button style="margin-bottom: 4px" class="btn btn-sm btn-vimeo text" type="button" *ngIf="item.vimo">
+        <span>Vimeo</span>
+      </button>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,27 @@
+<h1> This is a {{componentName}} </h1>
+
+<div class="card">
+  <div class="details">
+    <div class="user_photo horizontal_center" id="user_photo">
+      <img src="{{profile.picture.large}}">
+    </div>
+    <p id="user_title">{{title}}</p>
+    <p id="user_value">{{selectedValue}}</p>
+  </div>
+  <ul class="values_list horizontal_center" id="values_list" >
+    <li data-label="name" [class.active]="label === 'name'" (mouseover)="selectInformation('name')"
+        ></li>
+    <li data-label="email" data-caps="false" [class.active]="label === 'email'" (mouseover)="selectInformation('email')"
+        ></li>
+    <li  data-label="birthday" [class.active]="label === 'birthday'" (mouseover)="selectInformation('birthday')"
+         ></li>
+    <li  data-label="location" [class.active]="label === 'location'" (mouseover)="selectInformation('location')"
+         ></li>
+    <li  data-label="phone" [class.active]="label === 'phone'" (mouseover)="selectInformation('phone')"
+         ></li>
+    <li data-label="pass" data-caps="false" [class.active]="label === 'pass'"  (mouseover)="selectInformation('pass')"
+        ></li>
+  </ul>
+
+  <app-socialmedia [medias]="socialmedialist"> </app-socialmedia>
+</div>
